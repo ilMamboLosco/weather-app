@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="contenitore">
+            <input type="text" class="search" name="ricerca" required>
+        <a href="/meteo"><button class="ok">cerca</button></a>
+        <%if(locals.content){%>
+           <div class="contenuto"> <%= content %></div>
+        <%} else{%>
+            <div class="contenuto"> type a place</div>
+        <%}%>
+
+    </div>
+</body>
+</html>

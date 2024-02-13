@@ -1,0 +1,35 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#CDF5FD, #5FBDFF);
+}
+
+.search{
+    position: relative;
+    bottom: 20rem;
+    height: 5rem;
+    width: 30rem;
+    border: solid black .2rem;
+    background-color: transparent;
+    font-size: 4rem;
+}
+
+.contenuto{
+    font-size: 7rem;
+}
+
+.ok{
+    position: relative;
+    bottom: 21.5rem;
+    left: 5rem;
+    height: 5rem;
+    width: 9rem;
+    font-size: 3rem;
+}
