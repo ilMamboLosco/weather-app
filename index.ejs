@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="contenitore">
+        <form action="/giorni" method="POST">
+            <label for="ricerca"></label>
+            <input type="text" class="search" id="ricerca" name="ricerca" required>
+            <input type="submit" class="ok" value="Search">
+        </form>
+        <%if(locals.temperatura){%>
+            <div class="quattordiciFebbraio">14 Febbraio</div>
+            <div class="quattordiciFebbraio"><%= temperatura %></div>
+        <%} else{%>
+            <div class="contenuto uno"> type a place</div>
+        <%}%>
+
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>
