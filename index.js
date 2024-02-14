@@ -25,7 +25,7 @@ app.get("/meteo", async (req, res) => {
     try{
         var position = req.body.city;
         console.log(position);
-        /*let posizione = await axios.get("http://api.openweathermap.org/geo/1.0/direct?q=" + position +"&appid=e9e3fde18fec6993c9f538cdd5c067c6");
+        /*let posizione = await axios.get("http://api.openweathermap.org/geo/1.0/direct?q=" + position +"&appid=appidKey");
         const latitude = posizione.data[0].lat;
         const longitude = posizione.data[0].lon;
     
